@@ -1,0 +1,341 @@
+{
+  "seconds": 146.00109601020813,
+  "optuna_version": "5.0.0",
+  "n_trials": 1020,
+  "selection": {
+    "stage": "final",
+    "model": "SVR",
+    "internal_CV_MAPE": 7.906607041600623,
+    "params": {
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "kernel": "rbf",
+      "C": 26.94755704606429,
+      "gamma": 0.020035373874123227,
+      "epsilon_log": 0.07102939595727302
+    },
+    "n_trials": 80,
+    "features": [
+      "DQ_logvar",
+      "C1",
+      "C2",
+      "Switch_SOC"
+    ],
+    "seed": 20261001,
+    "outer_trials": 35,
+    "final_trials": 80,
+    "train_cells": 37,
+    "train_policies": 18,
+    "holdout_used_for_selection": false,
+    "test_used_for_selection": false,
+    "caveat": "Exploration and previous model experiments already inspected these batches. Nested CV within this new search does not eliminate prior analyst selection bias."
+  },
+  "cv": [
+    {
+      "model": "CatBoost",
+      "outer_CV_MAPE": 9.515935150389124,
+      "outer_CV_SD": 3.0515225077130363,
+      "pooled_MAPE": 9.6529391572034,
+      "n": 37
+    },
+    {
+      "model": "ExtraTrees",
+      "outer_CV_MAPE": 10.038820395170449,
+      "outer_CV_SD": 4.544263944612274,
+      "pooled_MAPE": 10.399512314535468,
+      "n": 37
+    },
+    {
+      "model": "RandomForest",
+      "outer_CV_MAPE": 10.552953080553811,
+      "outer_CV_SD": 2.433393389760798,
+      "pooled_MAPE": 10.642305193352438,
+      "n": 37
+    },
+    {
+      "model": "SVR",
+      "outer_CV_MAPE": 12.297231093500987,
+      "outer_CV_SD": 4.176862789493419,
+      "pooled_MAPE": 12.296182295679586,
+      "n": 37
+    },
+    {
+      "model": "SelectionProcedure",
+      "outer_CV_MAPE": 12.653231226171938,
+      "outer_CV_SD": 3.8181094834418565,
+      "pooled_MAPE": 12.67368046569442,
+      "n": 37
+    }
+  ],
+  "external": [
+    {
+      "model": "SVR",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "train",
+      "n": 37,
+      "MAPE": 6.106202782162374,
+      "MAE": 51.140279833807746,
+      "RMSE": 65.15896514082175,
+      "R2": 0.8790155309828519
+    },
+    {
+      "model": "SVR",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "valid",
+      "n": 9,
+      "MAPE": 6.125704140589091,
+      "MAE": 49.79630271957022,
+      "RMSE": 66.21075692699053,
+      "R2": 0.8080937235736197
+    },
+    {
+      "model": "SVR",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "test1",
+      "n": 39,
+      "MAPE": 46.680750019079824,
+      "MAE": 225.77236643646015,
+      "RMSE": 250.84276983910098,
+      "R2": -0.3079456783070882
+    },
+    {
+      "model": "SVR",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "test2",
+      "n": 44,
+      "MAPE": 16.395782540656395,
+      "MAE": 185.05136534994293,
+      "RMSE": 270.6862738224184,
+      "R2": 0.23894169998844006
+    },
+    {
+      "model": "CatBoost",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "train",
+      "n": 37,
+      "MAPE": 0.0014626411648256212,
+      "MAE": 0.012197621311773562,
+      "RMSE": 0.014790735681779084,
+      "R2": 0.9999999937660858
+    },
+    {
+      "model": "CatBoost",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "valid",
+      "n": 9,
+      "MAPE": 6.629389047374476,
+      "MAE": 52.37294015689784,
+      "RMSE": 64.36414766138572,
+      "R2": 0.8186489316926079
+    },
+    {
+      "model": "CatBoost",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "test1",
+      "n": 39,
+      "MAPE": 36.44898200142673,
+      "MAE": 182.35332688535212,
+      "RMSE": 199.20988072193455,
+      "R2": 0.17508674368331933
+    },
+    {
+      "model": "CatBoost",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "test2",
+      "n": 44,
+      "MAPE": 15.169837002171766,
+      "MAE": 177.12593717252443,
+      "RMSE": 251.51045538622319,
+      "R2": 0.34295132135794915
+    },
+    {
+      "model": "RandomForest",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "train",
+      "n": 37,
+      "MAPE": 2.9945234034378188,
+      "MAE": 24.902360843388333,
+      "RMSE": 42.01995582937737,
+      "R2": 0.9496855824615955
+    },
+    {
+      "model": "RandomForest",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "valid",
+      "n": 9,
+      "MAPE": 3.5322719049787996,
+      "MAE": 25.990470615160877,
+      "RMSE": 33.778359063794305,
+      "R2": 0.9500530274746173
+    },
+    {
+      "model": "RandomForest",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "test1",
+      "n": 39,
+      "MAPE": 31.65417585579169,
+      "MAE": 155.31301955832816,
+      "RMSE": 169.75220615090242,
+      "R2": 0.4010130145672762
+    },
+    {
+      "model": "RandomForest",
+      "feature_set": "S2",
+      "target_transform": "log",
+      "split": "test2",
+      "n": 44,
+      "MAPE": 15.924967361620926,
+      "MAE": 196.7814585369615,
+      "RMSE": 296.61120254951527,
+      "R2": 0.08618021135678278
+    },
+    {
+      "model": "ExtraTrees",
+      "feature_set": "S2_plus_ratio",
+      "target_transform": "original",
+      "split": "train",
+      "n": 37,
+      "MAPE": 0.1651580751582006,
+      "MAE": 1.4285360360360289,
+      "RMSE": 2.175403850101386,
+      "R2": 0.9998651468634918
+    },
+    {
+      "model": "ExtraTrees",
+      "feature_set": "S2_plus_ratio",
+      "target_transform": "original",
+      "split": "valid",
+      "n": 9,
+      "MAPE": 3.549804756650263,
+      "MAE": 26.628379629629634,
+      "RMSE": 34.77436806024781,
+      "R2": 0.9470640676969841
+    },
+    {
+      "model": "ExtraTrees",
+      "feature_set": "S2_plus_ratio",
+      "target_transform": "original",
+      "split": "test1",
+      "n": 39,
+      "MAPE": 37.54361009530316,
+      "MAE": 180.50008974358974,
+      "RMSE": 196.36588788073496,
+      "R2": 0.19847213875932634
+    },
+    {
+      "model": "ExtraTrees",
+      "feature_set": "S2_plus_ratio",
+      "target_transform": "original",
+      "split": "test2",
+      "n": 44,
+      "MAPE": 15.54754235574601,
+      "MAE": 184.56882954545455,
+      "RMSE": 278.69987993182025,
+      "R2": 0.19321275723792497
+    },
+    {
+      "model": "Selected",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "train",
+      "n": 37,
+      "MAPE": 6.106202782162374,
+      "MAE": 51.140279833807746,
+      "RMSE": 65.15896514082175,
+      "R2": 0.8790155309828519
+    },
+    {
+      "model": "Selected",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "valid",
+      "n": 9,
+      "MAPE": 6.125704140589091,
+      "MAE": 49.79630271957022,
+      "RMSE": 66.21075692699053,
+      "R2": 0.8080937235736197
+    },
+    {
+      "model": "Selected",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "test1",
+      "n": 39,
+      "MAPE": 46.680750019079824,
+      "MAE": 225.77236643646015,
+      "RMSE": 250.84276983910098,
+      "R2": -0.3079456783070882
+    },
+    {
+      "model": "Selected",
+      "feature_set": "S2_original_DQ",
+      "target_transform": "log",
+      "split": "test2",
+      "n": 44,
+      "MAPE": 16.395782540656395,
+      "MAE": 185.05136534994293,
+      "RMSE": 270.6862738224184,
+      "R2": 0.23894169998844006
+    }
+  ],
+  "feature_sets": {
+    "S1": [
+      "DQ_relative_logvar"
+    ],
+    "S2": [
+      "DQ_relative_logvar",
+      "C1",
+      "C2",
+      "Switch_SOC"
+    ],
+    "S3": [
+      "DQ_relative_logvar",
+      "C1",
+      "C2",
+      "Switch_SOC",
+      "capacity_retention_100_pct",
+      "IR_10",
+      "Tavg_median_early"
+    ],
+    "S2_plus_ratio": [
+      "DQ_relative_logvar",
+      "C1",
+      "C2",
+      "Switch_SOC",
+      "C1_to_C2_ratio"
+    ],
+    "S2_original_DQ": [
+      "DQ_logvar",
+      "C1",
+      "C2",
+      "Switch_SOC"
+    ],
+    "S4_early": [
+      "DQ_relative_logvar",
+      "C1",
+      "C2",
+      "Switch_SOC",
+      "capacity_retention_100_pct",
+      "IR_10",
+      "Tavg_median_early",
+      "IR_change_10_100",
+      "Qd_slope_early",
+      "Charge_time_median_early",
+      "DQ_relative_loss_area"
+    ]
+  },
+  "objective": "Mean original-space MAPE across four policy-disjoint folds",
+  "pruning": false,
+  "study_parallelism": 1
+}

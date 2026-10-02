@@ -1,0 +1,272 @@
+[
+  {
+    "search": "final_S1",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "final_S2",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "final_S3",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer0_S1",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer0_S2",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer0_S3",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer1_S1",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer1_S2",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer1_S3",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer2_S1",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer2_S2",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer2_S3",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer3_S1",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer3_S2",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer3_S3",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer4_S1",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer4_S2",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  },
+  {
+    "search": "outer4_S3",
+    "trials": 160,
+    "n_families": 8,
+    "families": [
+      "catboost",
+      "extra_tree",
+      "lgbm",
+      "rf",
+      "scaled_elastic",
+      "scaled_ridge",
+      "scaled_svr",
+      "xgboost"
+    ]
+  }
+]

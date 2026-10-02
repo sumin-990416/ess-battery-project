@@ -1,0 +1,21 @@
+{
+  "model": "scaled_svr",
+  "feature_set": "S1",
+  "internal_CV_MAPE": 7.537463250363652,
+  "params": {
+    "C": 9.104650856772889,
+    "gamma": 0.023620095773267215,
+    "epsilon": 0.08723135729496066
+  },
+  "seconds": 7.456568002700806,
+  "features": [
+    "DQ_relative_logvar"
+  ],
+  "seed": 20261001,
+  "train_cells": 37,
+  "train_policies": 18,
+  "budget_per_feature_seconds": 20.0,
+  "holdout_used_for_selection": false,
+  "test_used_for_selection": false,
+  "caveat": "Previous EDA and prior experiments already used these batches; they are not pristine untouched tests. Time-budgeted search can vary across runs."
+}

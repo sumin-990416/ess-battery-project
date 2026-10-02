@@ -1,0 +1,85 @@
+{
+  "nested_CV_MAPE_mean": 12.210538879261383,
+  "nested_CV_MAPE_SD": 1.084134057214251,
+  "pooled_OOF_MAPE": 12.294794951328496,
+  "seconds": 190.57055711746216,
+  "learner_list": [
+    "scaled_ridge",
+    "scaled_elastic",
+    "scaled_svr",
+    "lgbm",
+    "xgboost",
+    "catboost",
+    "rf",
+    "extra_tree"
+  ],
+  "feature_sets": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "n_jobs": 2,
+  "selection": {
+    "model": "scaled_svr",
+    "feature_set": "S1",
+    "internal_CV_MAPE": 7.537463250363652,
+    "params": {
+      "C": 9.104650856772889,
+      "gamma": 0.023620095773267215,
+      "epsilon": 0.08723135729496066
+    },
+    "seconds": 7.456568002700806,
+    "features": [
+      "DQ_relative_logvar"
+    ],
+    "seed": 20261001,
+    "train_cells": 37,
+    "train_policies": 18,
+    "budget_per_feature_seconds": 20.0,
+    "holdout_used_for_selection": false,
+    "test_used_for_selection": false,
+    "caveat": "Previous EDA and prior experiments already used these batches; they are not pristine untouched tests. Time-budgeted search can vary across runs."
+  },
+  "external": [
+    {
+      "split": "train",
+      "n": 37,
+      "model": "scaled_svr",
+      "feature_set": "S1",
+      "MAPE": 7.812181525842968,
+      "MAE": 65.76738592468564,
+      "RMSE": 80.93077898952586,
+      "R2": 0.8133582887456828
+    },
+    {
+      "split": "valid",
+      "n": 9,
+      "model": "scaled_svr",
+      "feature_set": "S1",
+      "MAPE": 6.220218386910103,
+      "MAE": 51.41472764936196,
+      "RMSE": 62.10986098906358,
+      "R2": 0.8311297338992032
+    },
+    {
+      "split": "test1",
+      "n": 39,
+      "model": "scaled_svr",
+      "feature_set": "S1",
+      "MAPE": 30.322748543004398,
+      "MAE": 151.330091963471,
+      "RMSE": 168.02161460572006,
+      "R2": 0.4131638767753617
+    },
+    {
+      "split": "test2",
+      "n": 44,
+      "model": "scaled_svr",
+      "feature_set": "S1",
+      "MAPE": 12.148371730184461,
+      "MAE": 147.36274841442562,
+      "RMSE": 239.49566845820536,
+      "R2": 0.4042270439265866
+    }
+  ]
+}

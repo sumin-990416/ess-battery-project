@@ -1,0 +1,3 @@
+n_splits,mean_MAPE,fold_SD,caveat
+4,7.537463250363652,1.3600717791861188,Fixed-parameter CV after selection on these development cells; not an independent nested estimate.
+5,9.51725679280929,1.7068927210677318,Fixed-parameter CV after selection on these development cells; not an independent nested estimate.

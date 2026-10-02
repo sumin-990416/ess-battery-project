@@ -1,0 +1,28 @@
+{
+  "stage": "final",
+  "model": "SVR",
+  "internal_CV_MAPE": 7.906607041600623,
+  "params": {
+    "feature_set": "S2_original_DQ",
+    "target_transform": "log",
+    "kernel": "rbf",
+    "C": 26.94755704606429,
+    "gamma": 0.020035373874123227,
+    "epsilon_log": 0.07102939595727302
+  },
+  "n_trials": 80,
+  "features": [
+    "DQ_logvar",
+    "C1",
+    "C2",
+    "Switch_SOC"
+  ],
+  "seed": 20261001,
+  "outer_trials": 35,
+  "final_trials": 80,
+  "train_cells": 37,
+  "train_policies": 18,
+  "holdout_used_for_selection": false,
+  "test_used_for_selection": false,
+  "caveat": "Exploration and previous model experiments already inspected these batches. Nested CV within this new search does not eliminate prior analyst selection bias."
+}

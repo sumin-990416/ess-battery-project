@@ -1,0 +1,10 @@
+{
+  "promote": false,
+  "rule": "Both development inner CV and whole-procedure nested CV must improve; external scores are not selection criteria.",
+  "previous_nested_CV_MAPE": 12.210538879261383,
+  "optuna_nested_CV_MAPE": 12.653231226171938,
+  "previous_inner_CV_MAPE": 7.537463250363652,
+  "optuna_inner_CV_MAPE": 7.906607041600623,
+  "recommended_model": "results/automl/final_model.joblib",
+  "caveat": "Conservative post-experiment retention check, not a preregistered significance test."
+}

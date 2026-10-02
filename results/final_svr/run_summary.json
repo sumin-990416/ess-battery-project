@@ -1,0 +1,79 @@
+{
+  "frozen_parameters": {
+    "kernel": "rbf",
+    "C": 9.104650856772889,
+    "gamma": 0.023620095773267215,
+    "epsilon": 0.08723135729496066
+  },
+  "features": [
+    "DQ_relative_logvar"
+  ],
+  "target_transform": "log/exp",
+  "train_cells": 37,
+  "train_policies": 18,
+  "no_retuning": true,
+  "holdout_used_for_training": false,
+  "test_used_for_training_or_selection": false,
+  "fixed_CV": [
+    {
+      "n_splits": 4,
+      "mean_MAPE": 7.537463250363652,
+      "fold_SD": 1.3600717791861188,
+      "caveat": "Fixed-parameter CV after selection on these development cells; not an independent nested estimate."
+    },
+    {
+      "n_splits": 5,
+      "mean_MAPE": 9.51725679280929,
+      "fold_SD": 1.7068927210677318,
+      "caveat": "Fixed-parameter CV after selection on these development cells; not an independent nested estimate."
+    }
+  ],
+  "previous_selection_procedure_nested_MAPE": 12.210538879261383,
+  "previous_selection_procedure_nested_SD": 1.084134057214251,
+  "max_abs_prediction_difference_vs_previous": 0.0,
+  "checks": [
+    "two independent fits agree",
+    "joblib reload agrees",
+    "target column excluded",
+    "all grouped folds policy-disjoint"
+  ],
+  "metrics": [
+    {
+      "split": "train",
+      "n_labeled": 37,
+      "n_predicted": 37,
+      "MAPE": 7.812181525842968,
+      "MAE": 65.76738592468564,
+      "RMSE": 80.93077898952586,
+      "R2": 0.8133582887456828
+    },
+    {
+      "split": "valid",
+      "n_labeled": 9,
+      "n_predicted": 9,
+      "MAPE": 6.220218386910103,
+      "MAE": 51.41472764936196,
+      "RMSE": 62.10986098906358,
+      "R2": 0.8311297338992032
+    },
+    {
+      "split": "test1",
+      "n_labeled": 39,
+      "n_predicted": 47,
+      "MAPE": 30.322748543004398,
+      "MAE": 151.330091963471,
+      "RMSE": 168.02161460572006,
+      "R2": 0.4131638767753617
+    },
+    {
+      "split": "test2",
+      "n_labeled": 44,
+      "n_predicted": 46,
+      "MAPE": 12.148371730184461,
+      "MAE": 147.36274841442562,
+      "RMSE": 239.49566845820536,
+      "R2": 0.4042270439265866
+    }
+  ],
+  "caveat": "Same previously inspected datasets; rerunning does not constitute new external validation. Provided cycle_life/EOL and original-paper data mapping remain unverified."
+}

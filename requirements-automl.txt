@@ -1,0 +1,5 @@
+-r requirements.txt
+flaml==2.7.0
+lightgbm==4.7.0
+xgboost==2.1.4
+catboost==1.2.10

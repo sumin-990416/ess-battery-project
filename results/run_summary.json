@@ -1,0 +1,30 @@
+{
+  "runtime_seconds": 63.387649059295654,
+  "selected": {
+    "model": "SVR",
+    "feature_set": "S1",
+    "internal_CV_MAPE": 9.204062757837226,
+    "internal_CV_SD": 1.5144971686461295,
+    "params": "{\"model__regressor__C\": 1, \"model__regressor__gamma\": 0.1}",
+    "features": [
+      "DQ_relative_logvar"
+    ],
+    "train_cells": 37,
+    "train_policies": 18,
+    "seed": 20261001,
+    "selection_rule": "Lowest development-only inner grouped-CV MAPE; exact ties prefer fewer features and simpler model.",
+    "holdout_used_for_selection": false,
+    "test_used_for_selection": false,
+    "environment": {
+      "python": "3.12.13",
+      "sklearn": "1.9.1"
+    },
+    "cv_caveat": "Whole-dataset EDA preceded split design; nested CV cannot remove that prior exploratory selection bias."
+  },
+  "split_counts": {
+    "test1": 47,
+    "test2": 46,
+    "train": 37,
+    "valid": 9
+  }
+}

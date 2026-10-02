@@ -1,0 +1,10 @@
+Index,value,unit,n
+Train (Batch 1 CV),13.488841210055838,%,37.0
+Valid (Batch 1 Hold-out),5.803455326996601,%,9.0
+Test (Batch 2),31.311440929438906,%,39.0
+Gap (Train-Valid),-7.685385883059237,pp,
+Gap (Valid-Test),25.507985602442304,pp,
+Gap (Target-Test): Batch 2,22.211440929438908,pp,
+Test (Batch 3),12.199319044153155,%,44.0
+Gap (Batch2-Batch3),-19.112121885285752,pp,
+Gap (Target-Test): Batch 3,3.0993190441531553,pp,

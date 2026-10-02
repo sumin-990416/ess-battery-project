@@ -1,0 +1,9 @@
+Index,value,unit,n
+"Train (Batch 1 CV, prior nested selection)",12.210538879261383,%,37.0
+Valid (Batch 1 Hold-out),6.220218386910103,%,9.0
+Test (Batch 2),30.322748543004398,%,39.0
+Gap (Train-Valid),-5.99032049235128,pp,
+Gap (Valid-Test),24.102530156094296,pp,
+Gap (Target-Test): Batch 2,21.2227485430044,pp,
+Test (Batch 3),12.148371730184461,%,44.0
+Gap (Batch2-Batch3),-18.174376812819936,pp,

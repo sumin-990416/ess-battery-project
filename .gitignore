@@ -1,0 +1,64 @@
+# Local configuration / secrets (only the reviewed example is public)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# Python / notebooks / development tools
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw and derived datasets: redistribution approval is not yet confirmed
+data/raw/
+data/processed/
+*.mat
+*.parquet
+*.h5
+*.hdf5
+data/**/*.csv
+data/**/*.tsv
+data/**/*.xlsx
+
+# Models and experiment databases/logs at ANY depth
+*.joblib
+*.pkl
+*.pickle
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.log
+catboost_info/
+results/automl_smoke/
+
+# Per-cell derived data; aggregate metrics and authored charts remain reviewable
+**/predictions.csv
+**/oof_predictions.csv
+**/family_oof_predictions.csv
+**/error_analysis.csv
+**/feature_range_audit.csv
+**/diagnosis.json
+**/artifact_manifest.json
+
+# Archives and third-party report/course PDFs are not source code
+*.zip
+*.pdf
+dist/
+build/
